@@ -22,8 +22,8 @@ export default function Footer() {
             />
           </Link>
           <p className="mt-5 leading-relaxed text-muted">
-            Rahim Care Group is focused on thoughtful, person-centred support, creating welcoming
-            environments where people feel valued and empowered.
+            Rahim Care Group provides children&rsquo;s residential care, creating welcoming,
+            supportive homes where children and young people can feel safe, valued and supported.
           </p>
         </div>
 

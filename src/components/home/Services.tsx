@@ -10,8 +10,8 @@ export default function Services() {
         <SectionHeading
           id="services-title"
           eyebrow="What We Do"
-          title="How We Support People"
-          description="A look at the ways we help people live well. Service details are placeholders and will be updated once confirmed."
+          title="How We Support Children and Young People"
+          description="Children's residential care centred on safety, stability and personal development. Support area details below are placeholders and will be updated once confirmed."
         />
         <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {SERVICES.map((service, i) => (

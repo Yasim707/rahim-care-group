@@ -15,9 +15,9 @@ export default function Careers() {
             title="Make a Difference With Us"
           />
           <p className="mt-6 text-lg leading-relaxed text-muted">
-            We are always interested in hearing from kind, thoughtful people who want to make a real
-            difference in someone&rsquo;s life. Join a welcoming team and become part of Rahim Care
-            Group.
+            Working in children&rsquo;s residential care is a chance to make a lasting difference to
+            a child&rsquo;s life. If you are caring, resilient and committed, we would love you to
+            join a supportive team at Rahim Care Group.
           </p>
           <Button to={ROUTES.careers.path} className="mt-9">
             Explore Careers

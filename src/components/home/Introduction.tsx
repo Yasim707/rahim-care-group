@@ -28,17 +28,17 @@ export default function Introduction() {
           <SectionHeading
             id="intro-title"
             eyebrow="Who We Are"
-            title="Supporting People. Enriching Lives."
+            title="Supporting Children. Building Brighter Futures."
           />
           <div className="mt-6 space-y-4 text-lg leading-relaxed text-muted">
             <p>
-              Rahim Care Group is an organisation focused on providing thoughtful, person-centred
-              support. We believe that everyone deserves to be listened to, respected and
-              encouraged to live life in the way that matters most to them.
+              Rahim Care Group is a provider of children&rsquo;s residential care, focused on
+              creating supportive environments where children and young people are treated with
+              dignity and supported as individuals.
             </p>
             <p>
-              Our approach is built on warmth, understanding and genuine partnership, helping
-              people feel at home and confident about the future.
+              We want every child to feel listened to, encouraged to develop and confident about
+              what lies ahead, with child-centred support that respects individual needs.
             </p>
           </div>
           <TextLink to={ROUTES.whatWeDo.path} className="mt-8">

@@ -1,25 +1,38 @@
-import { Handshake, HeartHandshake, Smile, Sprout, type LucideIcon } from 'lucide-react'
-import heroImage from '../assets/images/hero-care.jpg'
-import introImage from '../assets/images/intro-comfort.jpg'
-import serviceSupport from '../assets/images/service-support.jpg'
-import serviceConnection from '../assets/images/service-connection.jpg'
-import serviceCommunity from '../assets/images/service-community.jpg'
+import { BookOpenCheck, Home, ShieldCheck, Sprout, type LucideIcon } from 'lucide-react'
+import heroImage from '../assets/images/hero-home.jpg'
+import introImage from '../assets/images/intro-communal.jpg'
+import serviceLearning from '../assets/images/service-learning.jpg'
+import serviceHomeLife from '../assets/images/service-home-life.jpg'
+import serviceOutdoors from '../assets/images/service-outdoors.jpg'
 import homeExterior from '../assets/images/home-exterior.jpg'
-import homeWarm from '../assets/images/home-warm.jpg'
-import homeLounge from '../assets/images/home-lounge.jpg'
+import homeInterior from '../assets/images/home-interior.jpg'
+import homeGarden from '../assets/images/home-garden.jpg'
 import careersImage from '../assets/images/careers-team.jpg'
 import type { AccordionItem } from '../components/ui/Accordion'
 import { ROUTES } from './routes'
 
 /*
- * Homepage content. Everything marked "placeholder" is intentionally generic
- * and should be replaced once real information has been confirmed.
+ * Homepage content for Rahim Care Group, a children's residential care provider.
+ * Everything marked "placeholder" is intentionally generic and should be
+ * replaced once real information has been confirmed.
+ *
+ * Photography is non-identifying stock imagery and does NOT depict actual
+ * Rahim Care Group homes or children.
  */
 
 export const images = {
-  hero: { src: heroImage, alt: 'A carer sharing a warm moment with an older man beside a bright window' },
-  intro: { src: introImage, alt: 'Two people sitting close together on a sofa in a comfortable living room' },
-  careers: { src: careersImage, alt: 'A group of colleagues celebrating together outdoors' },
+  hero: {
+    src: heroImage,
+    alt: 'A welcoming stone house with a garden fence and flowering shrubs',
+  },
+  intro: {
+    src: introImage,
+    alt: 'A bright, homely communal dining and living space with a large wooden table',
+  },
+  careers: {
+    src: careersImage,
+    alt: 'A diverse group of colleagues in a friendly team discussion',
+  },
 }
 
 export interface Value {
@@ -30,24 +43,28 @@ export interface Value {
 
 export const VALUES: Value[] = [
   {
-    title: 'Compassion',
-    description: 'Kindness and understanding guide every interaction and every decision we make.',
-    icon: HeartHandshake,
+    title: 'Safety and Wellbeing',
+    description:
+      'Every child and young person should feel safe, protected and cared for in their home.',
+    icon: ShieldCheck,
   },
   {
-    title: 'Dignity and Respect',
-    description: 'Everyone is treated with respect, and their privacy, choices and voice are protected.',
-    icon: Handshake,
+    title: 'Respect and Dignity',
+    description:
+      'Children and young people are listened to, treated with respect and helped to have a voice.',
+    icon: Home,
   },
   {
     title: 'Individuality',
-    description: 'Support is shaped around each person: their story, their preferences and their goals.',
+    description:
+      'Support is shaped around each child: their personality, their needs and their aspirations.',
     icon: Sprout,
   },
   {
-    title: 'Wellbeing',
-    description: 'We care about the whole person, nurturing comfort, connection and a sense of purpose.',
-    icon: Smile,
+    title: 'Growth and Development',
+    description:
+      'We encourage learning, confidence and personal development at every stage of the journey.',
+    icon: BookOpenCheck,
   },
 ]
 
@@ -60,27 +77,30 @@ export interface ImageCardData {
   tag?: string
 }
 
-/** PLACEHOLDER services: edit titles and descriptions once services are confirmed. */
+/** PLACEHOLDER support areas: edit titles and descriptions once confirmed. */
 export const SERVICES: ImageCardData[] = [
   {
-    title: 'Service Title One',
-    description: 'A short, neutral description of this area of support. Replace with confirmed details.',
-    image: serviceSupport,
-    alt: 'People sharing a table and supporting one another at home',
+    title: 'Support Area One',
+    description:
+      'A short, neutral description of the support offered to children and young people. Replace with confirmed details.',
+    image: serviceLearning,
+    alt: 'An open book and notes on a desk, suggesting a quiet space for learning',
     to: ROUTES.whatWeDo.path,
   },
   {
-    title: 'Service Title Two',
-    description: 'A short, neutral description of this area of support. Replace with confirmed details.',
-    image: serviceConnection,
-    alt: 'Two people gently holding hands in a moment of reassurance',
+    title: 'Support Area Two',
+    description:
+      'A short, neutral description of the support offered to children and young people. Replace with confirmed details.',
+    image: serviceHomeLife,
+    alt: 'A bright, comfortable dining and living area in a family-style home',
     to: ROUTES.whatWeDo.path,
   },
   {
-    title: 'Service Title Three',
-    description: 'A short, neutral description of this area of support. Replace with confirmed details.',
-    image: serviceCommunity,
-    alt: 'Two people tending a garden together',
+    title: 'Support Area Three',
+    description:
+      'A short, neutral description of the support offered to children and young people. Replace with confirmed details.',
+    image: serviceOutdoors,
+    alt: 'A house with a large green lawn, representing outdoor space',
     to: ROUTES.whatWeDo.path,
   },
 ]
@@ -89,25 +109,28 @@ export const SERVICES: ImageCardData[] = [
 export const HOMES: ImageCardData[] = [
   {
     title: 'Home Name Placeholder',
-    description: 'A short introduction to this home will appear here.',
+    description:
+      'A short introduction to this children\u2019s residential care home will appear here.',
     image: homeExterior,
-    alt: 'A traditional house with a landscaped garden',
+    alt: 'A comfortable family-style house with warmly lit windows and a front garden',
     to: ROUTES.ourHomes.path,
     tag: 'Placeholder',
   },
   {
     title: 'Home Name Placeholder',
-    description: 'A short introduction to this home will appear here.',
-    image: homeWarm,
-    alt: 'A sunlit armchair with a soft blanket in a warm room',
+    description:
+      'A short introduction to this children\u2019s residential care home will appear here.',
+    image: homeInterior,
+    alt: 'A bright dining room with a wooden table and chairs by a large window',
     to: ROUTES.ourHomes.path,
     tag: 'Placeholder',
   },
   {
     title: 'Home Name Placeholder',
-    description: 'A short introduction to this home will appear here.',
-    image: homeLounge,
-    alt: 'A calm living room with a sofa, plants and soft lighting',
+    description:
+      'A short introduction to this children\u2019s residential care home will appear here.',
+    image: homeGarden,
+    alt: 'A pale blue house with a neat hedge and garden',
     to: ROUTES.ourHomes.path,
     tag: 'Placeholder',
   },
@@ -123,19 +146,19 @@ export const TESTIMONIALS = [
 /** PLACEHOLDER FAQs: neutral wording until confirmed. */
 export const FAQS: AccordionItem[] = [
   {
-    question: 'What kind of care and support does Rahim Care Group provide?',
+    question: 'What does Rahim Care Group provide?',
     answer:
-      'This is a placeholder answer. Full details of our care and support will be added once they have been confirmed.',
+      'This is a placeholder answer. Rahim Care Group provides children\u2019s residential care, and full details will be added once confirmed.',
   },
   {
-    question: 'How is support tailored to each person?',
+    question: 'How are placements arranged?',
     answer:
-      'This is a placeholder answer. We aim to provide person-centred support, and further detail will be added here.',
+      'This is a placeholder answer. Information about referrals and placements for local authorities and social workers will be added here.',
   },
   {
     question: 'Can I find out more about your homes?',
     answer:
-      'This is a placeholder answer. Information about our homes will be shared on the Our Homes page.',
+      'This is a placeholder answer. Details about our children\u2019s residential care homes will be shared on the Our Homes page.',
   },
   {
     question: 'How can I make an enquiry?',

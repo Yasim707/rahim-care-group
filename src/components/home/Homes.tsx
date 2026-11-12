@@ -14,7 +14,7 @@ export default function Homes() {
             id="homes-title"
             eyebrow="Our Homes"
             title="A Place to Feel at Home"
-            description="Comfortable, welcoming spaces designed around the people who live in them. Home names and details below are placeholders."
+            description="Our children's residential care homes are intended to be comfortable, welcoming and homely. Home names and details below are placeholders, and images are illustrative stock photography."
           />
           <Button to={ROUTES.ourHomes.path} className="self-start lg:self-auto">
             Explore Our Homes

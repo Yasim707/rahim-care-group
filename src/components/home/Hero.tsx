@@ -18,18 +18,18 @@ export default function Hero() {
           </p>
           <h1
             id="hero-title"
-            className="mt-6 text-[2.6rem] font-extrabold leading-[1.08] tracking-tight text-secondary sm:text-6xl lg:text-[4.25rem]"
+            className="mt-6 text-[2.5rem] font-extrabold leading-[1.1] tracking-tight text-secondary sm:text-6xl lg:text-[3.75rem]"
           >
-            Care That Makes a Difference.
+            Every Child Deserves a Place to Belong.
           </h1>
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted sm:text-xl">
-            Creating welcoming environments where people feel valued, supported and empowered to
-            live fulfilling lives.
+            Providing welcoming, supportive residential environments where children and young
+            people can feel safe, valued and supported to develop their potential.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <Button to={ROUTES.contact.path}>Get in Touch</Button>
             <Button to={ROUTES.whatWeDo.path} variant="secondary">
-              Discover What We Do
+              Discover Our Approach
             </Button>
           </div>
         </div>
@@ -50,7 +50,7 @@ export default function Hero() {
             height={1750}
             fetchPriority="high"
             decoding="async"
-            className="relative aspect-[4/4.4] w-full rounded-2xl object-cover object-bottom shadow-[0_30px_60px_-30px_rgba(41,35,45,0.45)]"
+            className="relative aspect-[4/4.4] w-full rounded-2xl object-cover shadow-[0_30px_60px_-30px_rgba(41,35,45,0.45)]"
           />
         </div>
       </Container>

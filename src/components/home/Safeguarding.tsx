@@ -25,10 +25,20 @@ export default function Safeguarding() {
             title="Safety, Dignity and Wellbeing"
           />
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-foreground/80">
-            Everyone deserves to feel safe. Safe, supportive environments allow people to be
-            themselves, speak openly and be treated with dignity every day. Safeguarding is a
-            responsibility we take seriously.
+            Every child and young person has the right to feel safe. Protecting their welfare and
+            wellbeing is at the heart of children&rsquo;s residential care, and it shapes how we
+            think about our homes, our people and the support we offer every day.
           </p>
+          <ul className="mt-8 flex flex-wrap gap-3">
+            {['Children\u2019s safety', 'Protection and welfare', 'Wellbeing'].map((item) => (
+              <li
+                key={item}
+                className="rounded-full border border-secondary/20 bg-white px-5 py-2 text-sm font-semibold text-secondary"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
           <Button to={ROUTES.safeguarding.path} className="mt-9">
             Learn About Safeguarding
           </Button>
