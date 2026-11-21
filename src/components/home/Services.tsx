@@ -16,7 +16,7 @@ export default function Services() {
             id="services-title"
             eyebrow="What We Do"
             title="How We Support Children and Young People"
-            description="A trauma-informed, child-centred approach that supports each young person\u2019s safety, wellbeing and development."
+            description="A trauma-informed, child-centred approach that supports each young person’s safety, wellbeing and development."
           />
         </Reveal>
         <ul className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
