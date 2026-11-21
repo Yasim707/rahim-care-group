@@ -7,7 +7,6 @@ import serviceOutdoors from '../assets/images/service-outdoors.jpg'
 import homeExterior from '../assets/images/home-exterior.jpg'
 import homeInterior from '../assets/images/home-interior.jpg'
 import homeGarden from '../assets/images/home-garden.jpg'
-import careersImage from '../assets/images/careers-team.jpg'
 import type { AccordionItem } from '../components/ui/Accordion'
 import { ROUTES } from './routes'
 
@@ -28,10 +27,6 @@ export const images = {
   intro: {
     src: introImage,
     alt: 'A bright, homely communal dining and living space with a large wooden table',
-  },
-  careers: {
-    src: careersImage,
-    alt: 'A diverse group of colleagues in a friendly team discussion',
   },
 }
 

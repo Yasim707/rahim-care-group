@@ -5,17 +5,14 @@ export const NAV_LINKS = [
   ROUTES.home,
   ROUTES.whatWeDo,
   ROUTES.ourHomes,
-  ROUTES.safeguarding,
-  ROUTES.careers,
-  ROUTES.ourStaff,
+  ROUTES.meetTheTeam,
 ] as const
 
 export const FOOTER_QUICK_LINKS = [
   ROUTES.home,
   ROUTES.whatWeDo,
   ROUTES.ourHomes,
-  ROUTES.careers,
-  ROUTES.safeguarding,
+  ROUTES.meetTheTeam,
   ROUTES.contact,
 ] as const
 
