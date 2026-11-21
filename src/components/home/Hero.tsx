@@ -2,6 +2,7 @@ import { ROUTES } from '../../data/routes'
 import { images } from '../../data/home'
 import Button from '../ui/Button'
 import Container from '../ui/Container'
+import Reveal from '../ui/Reveal'
 
 export default function Hero() {
   return (
@@ -13,19 +14,24 @@ export default function Hero() {
       />
       <Container className="relative pt-14 sm:pt-20 lg:pt-28">
         <div className="mx-auto text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-secondary">
-            Rahim Care Group
-          </p>
+          <Reveal>
+            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-secondary">
+              Rahim Care Group
+            </p>
+          </Reveal>
+          <Reveal delay={80}>
           <h1
             id="hero-title"
             className="mt-6 text-balance text-[2.5rem] font-extrabold leading-[1.1] tracking-tight text-secondary sm:text-5xl lg:whitespace-nowrap lg:text-[2.75rem] xl:text-[3.5rem] 2xl:text-[3.75rem]"
           >
             A Place to Belong, A Future to Believe In
           </h1>
+          </Reveal>
         </div>
       </Container>
       <Container className="relative grid items-center gap-12 pb-14 pt-12 sm:pb-20 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:pb-28 lg:pt-16">
         <div className="max-w-xl">
+          <Reveal delay={160}>
           <p className="text-balance font-heading text-3xl font-bold leading-[1.2] tracking-tight text-secondary sm:text-4xl lg:text-[2.5rem]">
             Compassionate care. Meaningful support. Brighter futures.
           </p>
@@ -39,8 +45,9 @@ export default function Hero() {
               Discover Our Approach
             </Button>
           </div>
+          </Reveal>
         </div>
-
+        <Reveal direction="left" delay={150}>
         <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
           <div
             aria-hidden="true"
@@ -60,6 +67,7 @@ export default function Hero() {
             className="relative aspect-[4/4.4] w-full rounded-2xl object-cover shadow-[0_30px_60px_-30px_rgba(41,35,45,0.45)]"
           />
         </div>
+        </Reveal>
       </Container>
     </section>
   )
