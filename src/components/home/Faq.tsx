@@ -11,7 +11,7 @@ export default function Faq() {
           id="faq-title"
           eyebrow="FAQs"
           title="Questions You May Have"
-          description="Answers below are placeholders and will be updated with confirmed information."
+          description="A few common questions about Rahim Care Group and how to reach us."
         />
         <Accordion items={FAQS} />
       </Container>

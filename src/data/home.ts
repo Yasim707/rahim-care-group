@@ -1,22 +1,24 @@
-import { BookOpenCheck, Home, ShieldCheck, Sprout, type LucideIcon } from 'lucide-react'
+import {
+  BookOpenCheck,
+  HeartPulse,
+  Home,
+  KeyRound,
+  ShieldCheck,
+  Sprout,
+  type LucideIcon,
+} from 'lucide-react'
 import heroImage from '../assets/images/hero-home.jpg'
 import introImage from '../assets/images/intro-communal.jpg'
-import serviceLearning from '../assets/images/service-learning.jpg'
-import serviceHomeLife from '../assets/images/service-home-life.jpg'
-import serviceOutdoors from '../assets/images/service-outdoors.jpg'
-import homeExterior from '../assets/images/home-exterior.jpg'
-import homeInterior from '../assets/images/home-interior.jpg'
-import homeGarden from '../assets/images/home-garden.jpg'
 import type { AccordionItem } from '../components/ui/Accordion'
-import { ROUTES } from './routes'
+import { homeImages } from './ourHomes'
 
 /*
  * Homepage content for Rahim Care Group, a children's residential care provider.
- * Everything marked "placeholder" is intentionally generic and should be
- * replaced once real information has been confirmed.
  *
- * Photography is non-identifying stock imagery and does NOT depict actual
- * Rahim Care Group homes or children.
+ * The hero and introduction use non-identifying stock imagery. The Our Homes
+ * section reuses the actual client-supplied photographs from the Our Homes page
+ * (see ./ourHomes.ts). The support areas use an icon-based composition that
+ * matches the What We Do page rather than photographs.
  */
 
 export const images = {
@@ -63,101 +65,65 @@ export const VALUES: Value[] = [
   },
 ]
 
-export interface ImageCardData {
+export interface SupportArea {
   title: string
   description: string
-  image: string
-  alt: string
-  to: string
-  tag?: string
+  icon: LucideIcon
 }
 
-/** PLACEHOLDER support areas: edit titles and descriptions once confirmed. */
-export const SERVICES: ImageCardData[] = [
+/** The three support areas, mirroring the What We Do page. Icon-based, no photos. */
+export const SUPPORT_AREAS: SupportArea[] = [
   {
-    title: 'Support Area One',
+    title: 'Trauma-Informed, Child-Centred Care',
     description:
-      'A short, neutral description of the support offered to children and young people. Replace with confirmed details.',
-    image: serviceLearning,
-    alt: 'An open book and notes on a desk, suggesting a quiet space for learning',
-    to: ROUTES.whatWeDo.path,
+      'We take a trauma-informed, child-centred approach, recognising each young person\u2019s individual experiences, needs and abilities. Our aim is to create a supportive environment where every young person feels understood, valued and supported.',
+    icon: HeartPulse,
   },
   {
-    title: 'Support Area Two',
+    title: 'Emotional Wellbeing and Positive Development',
     description:
-      'A short, neutral description of the support offered to children and young people. Replace with confirmed details.',
-    image: serviceHomeLife,
-    alt: 'A bright, comfortable dining and living area in a family-style home',
-    to: ROUTES.whatWeDo.path,
+      'We support young people in developing emotional resilience, building positive relationships and managing challenging behaviours, while promoting their mental health, confidence and personal development.',
+    icon: Sprout,
   },
   {
-    title: 'Support Area Three',
+    title: 'Independence and Life Skills',
     description:
-      'A short, neutral description of the support offered to children and young people. Replace with confirmed details.',
-    image: serviceOutdoors,
-    alt: 'A house with a large green lawn, representing outdoor space',
-    to: ROUTES.whatWeDo.path,
+      'We encourage young people to strengthen their independence and life skills, helping them build confidence and work towards their individual aspirations and future goals.',
+    icon: KeyRound,
   },
 ]
 
-/** PLACEHOLDER homes: do not publish until real home names are confirmed. */
-export const HOMES: ImageCardData[] = [
-  {
-    title: 'Home Name Placeholder',
-    description:
-      'A short introduction to this children\u2019s residential care home will appear here.',
-    image: homeExterior,
-    alt: 'A comfortable family-style house with warmly lit windows and a front garden',
-    to: ROUTES.ourHomes.path,
-    tag: 'Placeholder',
-  },
-  {
-    title: 'Home Name Placeholder',
-    description:
-      'A short introduction to this children\u2019s residential care home will appear here.',
-    image: homeInterior,
-    alt: 'A bright dining room with a wooden table and chairs by a large window',
-    to: ROUTES.ourHomes.path,
-    tag: 'Placeholder',
-  },
-  {
-    title: 'Home Name Placeholder',
-    description:
-      'A short introduction to this children\u2019s residential care home will appear here.',
-    image: homeGarden,
-    alt: 'A pale blue house with a neat hedge and garden',
-    to: ROUTES.ourHomes.path,
-    tag: 'Placeholder',
-  },
-]
+/** Our Homes section: reuses the real client photographs from the Our Homes page. */
+export const HOME_INTRO =
+  'Nestled within the beautiful countryside of Buckinghamshire, Rahim Care Group offers a peaceful, semi-rural setting surrounded by picturesque landscapes, green spaces and charming market towns. Our location provides a welcoming environment where children and young people can enjoy a sense of calm, privacy and belonging.'
 
-/** PLACEHOLDER testimonials: replace with real, permission-approved quotes only. */
-export const TESTIMONIALS = [
-  { label: 'Development placeholder', role: 'Role or relationship to be confirmed' },
-  { label: 'Development placeholder', role: 'Role or relationship to be confirmed' },
-  { label: 'Development placeholder', role: 'Role or relationship to be confirmed' },
-]
+export const HOME_GALLERY = [homeImages.location, homeImages.lounge, homeImages.bedroom]
 
-/** PLACEHOLDER FAQs: neutral wording until confirmed. */
+/** FAQs: concise, client-approved answers. */
 export const FAQS: AccordionItem[] = [
   {
-    question: 'What does Rahim Care Group provide?',
+    question: 'What type of care does Rahim Care Group provide?',
     answer:
-      'This is a placeholder answer. Rahim Care Group provides children\u2019s residential care, and full details will be added once confirmed.',
+      'We provide person-centred residential care for children and young people with complex emotional, behavioural and developmental needs.',
   },
   {
-    question: 'How are placements arranged?',
+    question: 'Who do you support?',
     answer:
-      'This is a placeholder answer. Information about referrals and placements for local authorities and social workers will be added here.',
+      'We support young people experiencing emotional and behavioural difficulties, mental health challenges, learning disabilities and the effects of trauma, abuse or neglect.',
   },
   {
-    question: 'Can I find out more about your homes?',
+    question: 'What approach do you take to care?',
     answer:
-      'This is a placeholder answer. Details about our children\u2019s residential care homes will be shared on the Our Homes page.',
+      'Our team uses a trauma-informed, therapeutic and child-centred approach tailored to each young person\u2019s individual needs, abilities and aspirations.',
+  },
+  {
+    question: 'Where is Rahim Care Group located?',
+    answer:
+      'We are based in the beautiful countryside of Buckinghamshire, in a peaceful semi-rural setting with access to local amenities and community resources.',
   },
   {
     question: 'How can I make an enquiry?',
     answer:
-      'This is a placeholder answer. You can reach us through the Contact Us page, and enquiry details will be added soon.',
+      'You can contact our team through the Contact Us page or email admin@rahimcaregroup.com.',
   },
 ]

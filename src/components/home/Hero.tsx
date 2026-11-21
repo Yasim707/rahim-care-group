@@ -11,17 +11,24 @@ export default function Hero() {
         aria-hidden="true"
         className="absolute -right-32 top-0 hidden h-full w-[48%] bg-lilac lg:block"
       />
-      <Container className="relative grid items-center gap-12 py-14 sm:py-20 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:py-28">
-        <div className="max-w-xl">
+      <Container className="relative pt-14 sm:pt-20 lg:pt-28">
+        <div className="mx-auto text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-secondary">
             Rahim Care Group
           </p>
           <h1
             id="hero-title"
-            className="mt-6 text-[2.5rem] font-extrabold leading-[1.1] tracking-tight text-secondary sm:text-6xl lg:text-[3.75rem]"
+            className="mt-6 text-balance text-[2.5rem] font-extrabold leading-[1.1] tracking-tight text-secondary sm:text-5xl lg:whitespace-nowrap lg:text-[2.75rem] xl:text-[3.5rem] 2xl:text-[3.75rem]"
           >
-            Every Child Deserves a Place to Belong.
+            A Place to Belong, A Future to Believe In
           </h1>
+          <p className="mt-5 text-base font-medium tracking-wide text-muted sm:text-lg">
+            Compassionate care. Meaningful support. Brighter futures.
+          </p>
+        </div>
+      </Container>
+      <Container className="relative grid items-center gap-12 pb-14 pt-10 sm:pb-20 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:pb-28 lg:pt-12">
+        <div className="max-w-xl">
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted sm:text-xl">
             Providing welcoming, supportive residential environments where children and young
             people can feel safe, valued and supported to develop their potential.
