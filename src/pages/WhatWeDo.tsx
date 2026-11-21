@@ -1,29 +1,27 @@
 import FinalCta from '../components/home/FinalCta'
 import Approach from '../components/what-we-do/Approach'
-import EverydayLife from '../components/what-we-do/EverydayLife'
-import IndividualIntro from '../components/what-we-do/IndividualIntro'
+import Belief from '../components/what-we-do/Belief'
+import Collaboration from '../components/what-we-do/Collaboration'
 import PageHero from '../components/what-we-do/PageHero'
-import PlaceToBelong from '../components/what-we-do/PlaceToBelong'
-import SafetyMatters from '../components/what-we-do/SafetyMatters'
+import Purpose from '../components/what-we-do/Purpose'
 import { ROUTES } from '../data/routes'
 import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function WhatWeDo() {
   usePageMeta(
     'What We Do | Rahim Care Group',
-    'Learn about Rahim Care Group\u2019s child-centred approach to children\u2019s residential care: individual support, safety and wellbeing, positive relationships, and growth and development.',
+    'Rahim Care Group provides trauma-informed, therapeutic and child-centred residential care for children and young people with complex emotional, behavioural and developmental needs.',
   )
 
   return (
     <>
       <PageHero />
-      <IndividualIntro />
+      <Purpose />
       <Approach />
-      <EverydayLife />
-      <PlaceToBelong />
-      <SafetyMatters />
+      <Collaboration />
+      <Belief />
       <FinalCta
-        title={'Let\u2019s Talk About How We Can Help'}
+        title={'Let\u2019s Start a Conversation'}
         description={
           'Get in touch with Rahim Care Group to learn more about our approach to children\u2019s residential care.'
         }
