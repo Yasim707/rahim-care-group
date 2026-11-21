@@ -22,13 +22,13 @@ export default function Hero() {
           >
             A Place to Belong, A Future to Believe In
           </h1>
-          <p className="mt-5 text-base font-medium tracking-wide text-muted sm:text-lg">
-            Compassionate care. Meaningful support. Brighter futures.
-          </p>
         </div>
       </Container>
-      <Container className="relative grid items-center gap-12 pb-14 pt-10 sm:pb-20 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:pb-28 lg:pt-12">
+      <Container className="relative grid items-center gap-12 pb-14 pt-12 sm:pb-20 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:pb-28 lg:pt-16">
         <div className="max-w-xl">
+          <p className="text-balance font-heading text-3xl font-bold leading-[1.2] tracking-tight text-secondary sm:text-4xl lg:text-[2.5rem]">
+            Compassionate care. Meaningful support. Brighter futures.
+          </p>
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted sm:text-xl">
             Providing welcoming, supportive residential environments where children and young
             people can feel safe, valued and supported to develop their potential.
